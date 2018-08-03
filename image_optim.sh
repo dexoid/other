@@ -1,9 +1,10 @@
 #!/bin/env bash
 IFS=$'\n'
-imagelist=$(find /root/images_test/optimized/images -type f \! -name "\.\*" \! -path "/root/images_test/optimized/images/backup/\*")
-db="/var/lib/image_optim/amazingy.db"
+PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+imagelist=$(find /home/cshelp/images -type f \! -name "\.\*" \! -path "/home/cshelp/images/backup/\*")
+db="/var/lib/image_optim/sole.db"
 
-# Create DB: sqlite3 /var/lib/image_optim/amazingy.db  "create table md5sum (id TEXT);"
+# Create DB: sqlite3 /var/lib/image_optim/sole.db  "create table md5sum (id TEXT);"
 
 for a in $imagelist
 do
