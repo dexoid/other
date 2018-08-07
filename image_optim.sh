@@ -12,6 +12,7 @@ do
   result=$(sqlite3 $db "select id from md5sum where id='"$md5"';")
  if [[ `echo "$result" |grep $md5` ]]
   then
+    echo "Exist"
     continue
   else
     image_optim $a
