@@ -16,7 +16,7 @@ sensors = ({ 'id': 1, 'name': 'outdoor', 'type': 'DHT', 'subtype': 22, 'pin': 5 
 report = '/tmp/sensors'
 
 # Narodmon variables
-mac = 'B827EB5AC2A3'
+mac = 'insert_your_mac'
 narodmon_ids = (1, 2)
 narodmon_data = '#{0}\n'.format(mac)
 narodmon_id = 1
